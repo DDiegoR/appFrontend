@@ -1,0 +1,30 @@
+<nav class="barraNavegacion">
+    <div class="logos">
+        <div class="logo">
+            <a routerLink="/principal"><img id="logo" src="assets/imagenes/LogoDR-white.png" alt="logo"></a>
+        </div>
+        <div class="arg-programa">
+            <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="assets/imagenes/APLogo-20-20.png" alt=""></a>
+        </div>
+    </div>
+    <div class="contenedor-nav">
+        <ol class="listaLinks">
+            <li><a class="enlaces" routerLink="/principal" [routerLinkActive]="'active'">
+                    <i class="fas fa-home"></i>                
+                </a>
+            </li>
+            <li><a class="enlaces" routerLink="/about-me" [routerLinkActive]="'active'">Sobre Mí</a></li>
+            <li><a class="enlaces" routerLink="/estudios" [routerLinkActive]="'active'">Estudios</a></li>
+            <li><a class="enlaces" routerLink="/proyectos" [routerLinkActive]="'active'">Proyectos</a></li>
+            <li><a href="#" class="enlaces">Contacto</a></li>
+            <li><a href="#" class="enlaces">Iniciar Sesión</a></li>
+            <li>
+                <div class="form-check form-switch">
+                    <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
+                </div>
+            </li>
+        </ol>  
+    </div>
+
+</nav>

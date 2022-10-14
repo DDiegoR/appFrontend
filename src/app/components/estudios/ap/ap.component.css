@@ -1,0 +1,26 @@
+.tituloEstudio{
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+.tituloEstudio a{
+    text-decoration: none;
+    color: #0379D6;
+    
+}
+.subtituloEstudio{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.descripcionEstudio{
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+.descripcionEstudio::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #0379D6;
+}

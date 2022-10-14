@@ -1,0 +1,15 @@
+<div id="estudios" class="seccion-estudios">
+    <h2 class="titulos-secciones">Mis Estudios</h2>
+    <div class="caja-estudios">
+        <!-- Listado -->
+        <div class="listado-estudios" role="table">
+            <a class="botonEstudio activeBoton" routerLink="/estudios/facultad" [routerLinkActive]="'active'">Universidad</a>
+            <a class="botonEstudio" routerLink="/estudios/dw" [routerLinkActive]="'active'">Curso Diseñador Web</a>
+            <a class="botonEstudio" routerLink="/estudios/ap" [routerLinkActive]="'active'">Full Stack Developer Jr</a>
+        </div>
+        <!-- Contenido -->
+        <div class="contenido-secciones">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

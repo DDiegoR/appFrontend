@@ -1,0 +1,56 @@
+.contenedorCentro{
+    width: 80%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    margin: 0 10%;
+}
+.contenedorCentral{
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    width: 100%;
+    z-index: 7;
+}
+#contenedorCentral{
+    padding: 0px 60px;
+    margin: 0px auto;
+}
+.logoCentral{
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    z-index: 3;
+}
+#logoCentral{
+    width: 400px;
+}
+.titular{
+    display: inline-block;
+    position: relative;
+}
+.diego{
+    display: inline-block;
+    color: white;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+}
+.descripcion{
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.btn-primary{
+    background: linear-gradient(270deg,#f06449,#ef3636);
+    border: 0px;
+}
+.btn-success{
+    background: linear-gradient(270deg, #0379D6, #101b3b);
+    color: white;
+}
