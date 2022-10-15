@@ -5,17 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dw.component.html',
   styleUrls: ['./dw.component.css']
 })
-export class DwComponent implements OnInit {
+export class DwComponent {
+  rutaImagen: string;
 
-  modalSwitch: boolean;
-
-  constructor() { }
-
-  ngOnInit(): void {
+  cargarRuta(){
+    this.rutaImagen = "assets/imagenes/tituloIEN.png";
   }
-
-  openModal() {
-    this.modalSwitch = true;
-  }
-
 }

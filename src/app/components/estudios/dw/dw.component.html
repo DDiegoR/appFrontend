@@ -5,6 +5,6 @@
         Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien)
         el cual me sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
     </p>
-    <a class="enlaces" (click)="modal.showModal()">Ver certificado</a>
-    <modal-certificados #modal></modal-certificados>
+    <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
+    <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
 </div>

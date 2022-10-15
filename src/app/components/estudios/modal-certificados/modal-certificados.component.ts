@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ViewChild, ElementRef, Renderer2, Input } from '@angular/core';
 
 @Component({
   selector: 'modal-certificados',
@@ -6,9 +6,10 @@ import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./modal-certificados.component.css']
 })
 export class ModalCertificadosComponent {
+  @Input() rutaImagen: string;
+  
   // Cerrar haciendo click afuera
   @ViewChild('modalBack') modalBack: ElementRef;
-
   public show = false;
 
   constructor(private renderer: Renderer2) {
@@ -18,7 +19,6 @@ export class ModalCertificadosComponent {
       }
     })
   }
-
   showModal() {
     this.show = true;
   }

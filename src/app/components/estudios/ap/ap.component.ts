@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ap',
   templateUrl: './ap.component.html',
   styleUrls: ['./ap.component.css']
 })
-export class ApComponent implements OnInit {
+export class ApComponent{
+  rutaImagen: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  cargarRuta(){
+    this.rutaImagen = "assets/imagenes/ap.png";
   }
-
 }

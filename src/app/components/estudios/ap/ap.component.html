@@ -4,5 +4,6 @@
     <p class="descripcionEstudio">
         Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
     </p>
-    <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">Ver certificado</a>
+    <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
+    <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
 </div>
