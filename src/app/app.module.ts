@@ -12,6 +12,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { EstudiosModule } from './components/estudios/estudios.module';
+import { ProyectosModule } from './components/proyectos/proyectos.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EstudiosModule } from './components/estudios/estudios.module';
     AppRoutingModule,
     ModalModule.forRoot(),
     EstudiosModule,
+    ProyectosModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
