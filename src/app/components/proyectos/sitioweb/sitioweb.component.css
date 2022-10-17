@@ -1,3 +1,18 @@
+.seccion{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.boton{
+    background-color: transparent;
+    position: fixed;
+    left: 5%;
+    border-radius: 40%;
+    border-color:white;
+}
+.back{
+    color: white;
+    font-size: 30px;
+}
 .seccion-proyectos{
     padding: 100px 10% 50px 10%;
     margin: 0px auto;

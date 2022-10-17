@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'proyectos',
@@ -7,4 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectosComponent {
 
+    constructor(private router: Router) {}
 }

@@ -42,13 +42,6 @@ body::-webkit-scrollbar {
   color: #0379D6;
   white-space: nowrap;
 }
-.titulos-secciones::before{
-  position: relative;
-  content: "0" counter(section) ".";
-  counter-increment: section 1;
-  margin-right: 10px;
-  color: #0379D6;
-}
 .titulos-secciones::after{
   content: "";
   display: block;

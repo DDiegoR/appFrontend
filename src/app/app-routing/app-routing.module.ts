@@ -5,7 +5,6 @@ import { PrincipalComponent } from '../components/principal/principal.component'
 import { AboutMeComponent } from '../components/about-me/about-me.component';
 import { RegistroComponent } from '../components/registro/registro.component';
 
-
 // Defino las rutas
 const routes: Routes = [
   {path: '', redirectTo: '/principal', pathMatch:'full'},

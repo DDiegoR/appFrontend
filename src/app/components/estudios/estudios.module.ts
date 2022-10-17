@@ -10,6 +10,7 @@ import { DwComponent } from './dw/dw.component';
 import { ApComponent } from './ap/ap.component';
 import { ModalCertificadosComponent } from './modal-certificados/modal-certificados.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SkillsComponent } from './skills/skills.component';
     CommonModule,
     NgbModule,
     EstudiosRoutingModule,
+    FormsModule
   ]
 })
 export class EstudiosModule { }
