@@ -1,0 +1,64 @@
+<div class="modalCaja">
+    <div class="modal-body">
+        <div class="modal-caja col-12">
+            <div class="modal-contacto col">
+                <h1>Contacto</h1>
+                <h3>Diego Eduardo Romero</h3>
+                <h6>Full Stack Developer Jr</h6>
+                <p>!Hola! Podés contactarme para algún proyecto o bien solo para hacerme una consulta.</p>
+                <div class="contacto-iconoSkills">
+                    <ul class="listaSkills-modal">
+                        <li><img src="assets/iconos/html.png" alt=""></li>
+                        <li><img src="assets/iconos/css.png" alt=""></li>
+                        <li><img src="assets/iconos/javascript.png" alt=""></li>
+                        <li><img src="assets/iconos/angular.png" alt=""></li>
+                        <li><img src="assets/iconos/mysql.png" alt=""></li>
+                    </ul>
+                </div>
+                <p>Trataré de responderte lo antes posible.</p>
+            </div>
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="col">
+                <!-- Nombre -->
+                <div class="mb-3">
+                    <label for="name" class="col-form-label">Nombre y Apellido</label>
+                    <input type="text" name="" id="" formControlName="name" class="form-control">
+                </div>
+                <!-- Validación Nombre -->
+                <div *ngIf="Name?.errors && Name?.touched">
+                    <p *ngIf="Name?.hasError('required')" class="error">
+                        El nombre y apellido es requerido.
+                    </p>
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">Correo Electrónico</label>
+                    <input type="email" formControlName="email" class="form-control">
+                </div>
+                <!-- Validación Email -->
+                <div *ngIf="Mail?.errors && Mail?.touched">
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                        El correo electrónico es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                        El formato del correo electrónico debe ser válido.
+                    </p>
+                </div>
+                <!-- Mensaje -->
+                <div class="mb-3">
+                    <label for="inputMessage" class="col-form-label">Mensaje: </label>
+                    <textarea type="text" formControlName="message" class="form-control" rows="6"></textarea>
+                </div>
+                <!-- Validación Mensaje -->
+                <div *ngIf="Message?.errors && Message?.touched">
+                    <p *ngIf="Message?.hasError('required')" class="error">
+                        El mensaje es requerido.
+                    </p>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

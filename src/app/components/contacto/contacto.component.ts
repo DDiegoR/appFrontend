@@ -2,43 +2,47 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  selector: 'contacto',
+  templateUrl: './contacto.component.html',
+  styleUrls: ['./contacto.component.css']
 })
-export class RegistroComponent implements OnInit {
+export class ContactoComponent implements OnInit {
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      email: ['',[Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+      name:['', [Validators.required]],
+      email:['', [Validators.required, Validators.email]],
+      message:['',[Validators.required]]
     })
-   }
-
-  ngOnInit(): void {
   }
+
+  ngOnInit() {}
 
   get Name() {
     return this.form.get("name");
   }
-  get Mail() {
-    return this.form.get("email");
+
+  get Message(){
+    return this.form.get("message");
   }
-  get Password() {
-    return this.form.get("password");
+ 
+  get Mail(){
+   return this.form.get("email");
   }
 
   get NameValid() {
-    return this.Name?.valid;
+    return !this.Name?.valid;
   }
-  get EmailValid() { 
+
+  get MailValid() {
     return false;
   }
-  get PasswordValid() {
-    return this.Password?.touched && !this.Password?.valid;
+  
+  get MessageValid(){
+    return !this.Message?.valid;
   }
+
 
   onEnviar(event: Event) {
     event?.preventDefault;
@@ -49,5 +53,4 @@ export class RegistroComponent implements OnInit {
       this.form.markAllAsTouched();
     }
   }
-
 }

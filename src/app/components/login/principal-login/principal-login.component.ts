@@ -1,28 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-@Component({
-  selector: 'registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
-})
-export class RegistroComponent implements OnInit {
-  form: FormGroup;
 
+@Component({
+  selector: 'principal-login',
+  templateUrl: './principal-login.component.html',
+  styleUrls: ['./principal-login.component.css']
+})
+
+export class PrincipalLoginComponent implements OnInit {
+  form: FormGroup;
+    
   constructor(private formBuilder: FormBuilder) {
-    this.form = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      email: ['',[Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+  this.form = this.formBuilder.group({
+    email: ['',[Validators.required, Validators.email]],
+    password: ['', [Validators.required]],
     })
-   }
+  }
 
   ngOnInit(): void {
   }
 
-  get Name() {
-    return this.form.get("name");
-  }
   get Mail() {
     return this.form.get("email");
   }
@@ -30,9 +28,6 @@ export class RegistroComponent implements OnInit {
     return this.form.get("password");
   }
 
-  get NameValid() {
-    return this.Name?.valid;
-  }
   get EmailValid() { 
     return false;
   }
@@ -49,5 +44,4 @@ export class RegistroComponent implements OnInit {
       this.form.markAllAsTouched();
     }
   }
-
 }

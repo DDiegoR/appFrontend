@@ -1,26 +1,15 @@
 <div class="modalCaja">
     <div class="login col-8">
         <div class="header">
-            <h2>Registrarse</h2>
+            <h2>Iniciar Sesión</h2>
             <button type="button" 
                 class="btn btn-primary" 
-                ngbTooltip="Al registrarte podrás editar algunas secciones de la página"
+                ngbTooltip="Al iniciar sesión podrás editar algunas secciones de la página"
                 placement="right">
                 <i class="far fa-question-circle" style="font-size: 20px;"> </i>
             </button>
         </div>
         <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="col">
-            <!-- Nombre y apellido -->
-            <div class="campos">
-                <label for="name" class="col-form-label">Nombre y Apellido</label>
-                <input type="text" formControlName="name" class="form-control">
-            </div>
-            <!-- Validación nombre y apellido -->
-            <div *ngIf="Name?.errors && Name?.touched">
-                <p *ngIf="Name?.hasError('required')" class="error">
-                    El nombre y apellido es requerido.
-                </p>
-            </div>
             <!-- Email -->
             <div class="campos"> 
                 <label for="email" class="col-form-label">Correo Electrónico</label>
@@ -45,17 +34,11 @@
                 <p *ngIf="Password?.hasError('required')" class="error">
                     Se requiere una contraseña.
                 </p>
-                <p *ngIf="Password?.errors?.['minlength']" class="error">
-                    La contraseña debe tener como mínimo 8 caracteres.
-                </p>
             </div>
 
-            <div class="footerRegistro">
-                <button type="submit" class="btn btn-primary">Registrarse</button>
-                <div class="iniciarSesion">
-                    Ya tienes una cuenta?
-                    <button type="button" class="btn btn-secondary" routerLink="/login/principal-login">Iniciar Sesión</button>
-                </div>
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                <button type="button" class="btn btn-secondary" routerLink="/login/registro">Registrarse</button>
             </div>
         </form>
     </div>

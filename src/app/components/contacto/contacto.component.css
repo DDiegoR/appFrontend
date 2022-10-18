@@ -1,0 +1,45 @@
+.modalCaja{
+    padding: 9% 15% 0;
+}
+.modal-caja{
+    display: flex;
+    flex-direction: row;
+}
+.modal-body{
+    height: 100%;
+}
+.modal-contacto h1, .modal-contacto p{
+    color: #fff;
+}
+.modal-contacto h1{
+    margin-bottom: 40px;
+}
+.modal-contacto h6{
+    margin-bottom: 40px;
+}
+.modal-caja form{
+    color: #0379D6;
+}
+.modal-contacto h3, .modal-contacto h6{
+    color: #0379D6;
+}
+.modal-contacto{
+    padding: 20px 40px;
+}
+.listaSkills-modal{
+    list-style: none;
+}
+.listaSkills-modal li{
+    display: inline;
+    padding-right: 20px;
+}
+.listaSkills-modal li img{
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 576px){
+    .modal-caja{
+        display: block;
+    }
+}
