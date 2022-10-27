@@ -5,13 +5,13 @@
 .boton{
     background-color: transparent;
     position: fixed;
-    left: 5%;
-    border-radius: 40%;
-    border-color:white;
+    border: none;
+    left: 89%;
+    z-index: 1;
 }
 .back{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 .panel{
     display: block;
@@ -57,4 +57,7 @@
 }
 .contenido h3, .contenido h5{
     color: #0379d6;
+}
+a:hover{
+    text-decoration: none;
 }

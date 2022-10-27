@@ -15,7 +15,17 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-
+.enlaces{
+  color: #b0b2c3;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.enlaces:hover{
+  color: #0379d6 !important;
+  text-decoration: none;
+}
 /* SCROLL */
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */

@@ -1,5 +1,5 @@
 .seccion-estudios{
-    padding: 100px 80px 50px 10%;
+    padding: 100px 50px 50px 5%;
     margin: 0px auto;
     height: 100%;
     min-height: 80vh;
@@ -10,7 +10,7 @@
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     color: #94959C;
     margin-top: 100px;
-    padding-right: 80px;
+    padding: 0 80px 50px 10%;
 }
 .listado-estudios{
     position: relative;
@@ -40,10 +40,6 @@
     color:#0379D6;
     border-color: #0379D6;
 }
-button{
-    cursor: pointer;
-    border: 0px;
-}
 .contenido-secciones{
     position: relative;
     width: 100%;
@@ -54,4 +50,20 @@ button{
     height: 10%;
     width: 10%;
     cursor: pointer;
+}
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.botonEdit {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 15px;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
 }

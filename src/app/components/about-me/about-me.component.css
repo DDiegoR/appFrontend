@@ -39,3 +39,19 @@
     border: solid 2px;
     border-color: #0379D6;
 }
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.botonEdit {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 15px;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
+}
