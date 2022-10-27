@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 
-import { EstudiosComponent } from 'src/app/components/estudios/estudios.component';
-import { FacultadComponent } from 'src/app/components/estudios/facultad/facultad.component';
-import { DwComponent } from 'src/app/components/estudios/dw/dw.component';
-import { ApComponent } from 'src/app/components/estudios/ap/ap.component';
+import { EstudiosComponent } from './estudios.component';
+import { FacultadComponent } from './facultad/facultad.component';
+import { DwComponent } from './dw/dw.component';
+import { ApComponent } from './ap/ap.component';
 
 
 const routes: Routes = [

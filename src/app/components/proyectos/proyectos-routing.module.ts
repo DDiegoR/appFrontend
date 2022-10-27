@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProyectosComponent } from './proyectos.component';
-import { ItemsComponent } from 'src/app/components/proyectos/items/items.component';	
+import { ItemsComponent } from './items/items.component';	
 import { PortfolioComponent} from './portfolio/portfolio.component';
 import { SimonComponent } from './simon/simon.component';
 import { SitiowebComponent } from './sitioweb/sitioweb.component';
