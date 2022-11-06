@@ -55,3 +55,9 @@
     color: white;
     margin: 5px 3px;
 }
+
+@media only screen and (max-width: 768px){
+    .contenedor-sobreMi{
+        display: block;
+    }
+}

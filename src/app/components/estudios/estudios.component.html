@@ -9,11 +9,11 @@
     </div>
     <div class="caja-estudios">
         <!-- Listado -->
-        <div class="listado-estudios" role="table">
-            <a class="botonEstudio activeBoton" routerLink="/estudios/facultad" [routerLinkActive]="'active'">Universidad</a>
-            <a class="botonEstudio" routerLink="/estudios/dw" [routerLinkActive]="'active'">Curso Diseñador Web</a>
-            <a class="botonEstudio" routerLink="/estudios/ap" [routerLinkActive]="'active'">Full Stack Developer Jr</a>
-        </div>
+        <ul class="listado-estudios">
+            <li *ngFor = "let estudio of estudios">
+                <a class="botonEstudio activeBoton" routerLink="{{estudio.path}}" [routerLinkActive]="'active'">{{estudio.nombre}}</a>
+            </li>
+        </ul>
         <!-- Contenido -->
         <div class="contenido-secciones">
             <router-outlet></router-outlet>

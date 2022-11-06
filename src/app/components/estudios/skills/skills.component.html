@@ -1,45 +1,27 @@
 
-<section class="seccion-skills">
-    <h1 class="titulo-skills">Mis Skills</h1>
+<section class="seccion">
+    <h1 class="titulo">Mis Skills</h1>
     <div class="skills">
-        <h3>Soft Skills</h3>
-        <div class="numeracion1">1</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="60%" height="25" />
-            <text x="3" y="20" class="nombre">Gestion del tiempo</text>
-            <text x="54%" y="20" class="porcentaje">90%</text>
-        </svg>
-        <div class="numeracion2">2</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="50%" height="25" />
-            <text x="3" y="20" class="nombre">Trabajo en equipo</text>
-            <text x="44%" y="20" class="porcentaje">80%</text>
-        </svg>
-        <div class="numeracion3">3</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="50%" height="25" />
-            <text x="3" y="20" class="nombre">Adaptabilidad</text>
-            <text x="44%" y="20" class="porcentaje">80%</text>
-        </svg>
-        <div class="numeracion4">4</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="40%" height="25" />
-            <text x="3" y="20" class="nombre">Resolución de problemas</text>
-            <text x="34%" y="20" class="porcentaje">70%</text>
-        </svg>
-        <h3>Hard Skills</h3>
-        <div class="numeracion5">1</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="65%" height="25" />
-            <text x="3" y="20" class="nombre">Desarrollo web Full Stack</text>
-            <text x="59%" y="20" class="porcentaje">95%</text>
-        </svg>
-
-        <div class="numeracion6">2</div>
-        <svg class="caja">
-            <rect x="0" y="0" width="50%" height="25" />
-            <text x="3" y="20" class="nombre">Manejo de recursos tecnológicos</text>
-            <text x="44%" y="20" class="porcentaje">80%</text>
-        </svg>
+        <ul>
+            <li *ngFor = "let habilidad of habilidades" class="numeracion">
+                <div>{{habilidad.idHabilidad}}</div>
+                <svg class="caja">
+                    <rect x="0" y="0" attr.width="{{habilidad.porcentaje}}%" height="25" />
+                    <text x="3" y="20" class="nombre">{{habilidad.titulo}}</text>
+                    <text attr.x="{{habilidad.porcentaje - 6}}%" y="20" class="porcentaje">{{habilidad.porcentaje}}%</text>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="seccion">
+    <div class="tecnologias">
+        <h1 class="titulo">Tecnologías</h1>
+        <ul class="lista-tecnologias">
+            <li *ngFor = "let tecnologia of tecnologias">
+                <h5>{{tecnologia.titulo}}</h5>
+                <img src="{{tecnologia.imagen}}" alt="">
+            </li>
+        </ul>
     </div>
 </section>

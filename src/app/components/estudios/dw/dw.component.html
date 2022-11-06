@@ -1,10 +1,7 @@
 <div id="cursoDW" role="tabpanel">
-    <h3 class="tituloEstudio">Diseñador Web <a href="http://ien.edu.ar/">@ien</a></h3>
-    <h5 class="subtituloEstudio">Agosto - Diciembre 2021</h5>
-    <p class="descripcionEstudio">
-        Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien)
-        el cual me sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
-    </p>
+    <h3 class="tituloEstudio">{{titulo}}<a href={{link}} target="_blank">{{nombreLink}}</a></h3>
+    <h5 class="subtituloEstudio">{{fecha_inicio | date: 'MMMM d, y'}} - {{fecha_fin | date: 'MMMM d, y'}}</h5>
+    <p class="descripcionEstudio">{{descripcion}}</p>
     <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
     <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
 </div>

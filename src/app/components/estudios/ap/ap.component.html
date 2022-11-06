@@ -1,9 +1,7 @@
 <div id="argentinaPrograma" role="tabpanel">
-    <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
-    <h5 class="subtituloEstudio">Febrero 2022 - Enero 2023</h5>
-    <p class="descripcionEstudio">
-        Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
-    </p>
+    <h3 class="tituloEstudio">{{titulo}}<a href={{link}} target="_blank">{{nombreLink}}</a></h3>
+    <h5 class="subtituloEstudio">{{fecha_inicio | date: 'MMMM d, y'}} - {{fecha_fin | date: 'MMMM d, y'}}</h5>
+    <p class="descripcionEstudio">{{descripcion}}</p>
     <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
     <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
 </div>

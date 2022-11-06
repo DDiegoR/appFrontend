@@ -1,8 +1,5 @@
 <div id="facultad" role="tabpanel">
-    <h3 class="tituloEstudio">Donde estudio <a href="https://www.frre.utn.edu.ar/">@Facultad</a></h3>
-    <h5 class="subtituloEstudio">Marzo 2016 - Presente</h5>
-    <p class="descripcionEstudio">
-        Actualmente estoy estudiando Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional 
-        Facultad Regional de Resistencia.
-    </p>
+    <h3 class="tituloEstudio">{{titulo}}<a href={{link}} target="_blank">{{nombreLink}}</a></h3>
+    <h5 class="subtituloEstudio">{{fecha_inicio | date:'MMMM d, y'}} - {{fecha_fin}}</h5>
+    <p class="descripcionEstudio">{{descripcion}}</p>
 </div>

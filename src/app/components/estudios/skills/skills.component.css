@@ -1,9 +1,12 @@
-.titulo-skills {
+.seccion {
+    padding: 50px 0;
+}
+.titulo {
   font-family: League Spartan,Helvetica,Arial,sans-serif;
   color: #0379D6;
 }
-.skills h3 {
-    color: white;
+.skills ul {
+    list-style: none;
 }
 .caja {
     padding-left: 20px;
@@ -20,41 +23,30 @@
     font-size: 25px;
 }
 
-.numeracion1 {
-    position: absolute;
-    top: 103%;
+.numeracion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     font-size: 27px;
     padding-left: 4px;
 }
-.numeracion2 {
-    position: absolute;
-    top: 109%;
-    color: white;
-    font-size: 27px;
+.lista-tecnologias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    list-style: none;
 }
-.numeracion3 {
-    position: absolute;
-    top: 115.5%;
-    color: white;
-    font-size: 27px;
+.lista-tecnologias li {
+    margin: 0 20px;
 }
-.numeracion4 {
-    position: absolute;
-    top: 122%;
+.lista-tecnologias li h5 {
     color: white;
-    font-size: 27px;
+    text-align: center;
+    font-size: 18px;
 }
-.numeracion5 {
-    position: absolute;
-    top: 135%;
-    color: white;
-    font-size: 27px;
-    padding-left: 4px;
-}
-.numeracion6 {
-    position: absolute;
-    top: 141.5%;
-    color: white;
-    font-size: 27px;
+ul.lista-tecnologias img {
+    width: 100%;
 }

@@ -86,3 +86,9 @@
 .link:hover i.linkedin {
     color: #0a66ca;
 }
+
+@media only screen and (max-width: 900px){
+    .social {
+        display: none;
+    }
+}

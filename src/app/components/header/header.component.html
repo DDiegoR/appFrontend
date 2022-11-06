@@ -20,13 +20,29 @@
             <li><a class="enlaces" routerLink="/proyectos" [routerLinkActive]="'active'">Proyectos</a></li>
             <li><a class="enlaces" routerLink="/contacto" [routerLinkActive]="'active'">Contacto</a></li>
             <li><a class="enlaces" routerLink="/login" [routerLinkActive]="'active'">Iniciar Sesión</a></li>
-            <li>
-                <div class="form-check form-switch">
-                    <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
-                </div>
-            </li>
         </ol>  
+    </div>
+
+    <div class="menuDesplegable">
+            <button id="botonMenu" onclick="desplegarMenu()">
+                <div class="ham-box">
+                    <div id="ham-box-inner" class="ham-box-inner-close"></div>
+                </div>
+            </button>
+            <nav id="contenidoMenu">
+                <ul class="linksNav">
+                    <li><a>Sobre Mí</a></li>
+                    <li><a>Estudios</a></li>
+                    <li><a>Contacto</a></li>
+                    <li><a>Iniciar Sesión</a></li>
+                </ul>
+                <ul class="socialNavbar">
+                    <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="assets/iconos\instaNavbar.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="assets/iconos\tw.png" alt=""></a></li>
+                    <li><a href="https://github.com/DDiegoR" target="_blank"><img src="assets/iconos\gh.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="assets/iconos\in.png" alt=""></a></li>
+                </ul>
+            </nav>
     </div>
 
 </nav>

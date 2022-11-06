@@ -10,66 +10,15 @@
     </div>
     <div class="caja-proyectos">
         <ul class="listaPanel">
-            <li>
+            <li *ngFor = "let proyecto of proyectos">
                 <div class="panel">
-                    <a routerLink="/proyectos/portfolio">
-                        <img src="assets/imagenes/portfolio.png" alt="">
-                        <div class="cajaTexto">
-                            <h2>Portfolio Web</h2>
-                            <p>
-                                Este portfolio lo realice en el curso de Argentina Programa #YoProgramo y es la pagina en la que estas ahora mismo. 
-                                Fue una buena experiencia y un buen aprendizaje en donde pude volcar todo lo aprendido.
-                                El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, Javascript, Angular, Spring Boot, Java, MySQL, Heroku. 
-                            </p>
-                            <h6>Año: 2022</h6>
-                        </div>
-                    </a>
-                </div>    
-            </li>
-            <li>
-                <div class="panel">
-                    <a routerLink="/proyectos/sitioweb">
-                        <img src="assets/imagenes/sitioweb.png" alt="">
-                        <div class="cajaTexto">
-                            <h2>Primer Sitio Web</h2>
-                            <p>
-                                Este sitio web lo diseñé en un curso de Diseñador Web. Es como una página en donde hay info
-                                sobre mí. Fue desarollada a modo de práctica y el stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
-                            </p>
-                            <h6>Año: 2021</h6>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="panel">
-                    <a routerLink="/proyectos/simon">
-                        <img src="assets/imagenes/Simon.png" alt="">
-                        <div class="cajaTexto">
-                            <h2>Juego - Simón</h2>
-                            <p>
-                                Este proyecto es de un juego que desarrollé junto a un grupo de amigos en la facultad, el nombre del 
-                                grupo era Vulgary. Este juego es una versión digital del famoso juego electrónico Simon creado 
-                                por Ralph Baer y Howard J. Morrison, su interfaz es simple ya que esta desarrollado para consola 
-                                utilizando el lenguaje Python. Fue una linda experiencia de trabajo en equipo y creatividad.
-                            </p>
-                            <h6>Año: 2016</h6>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="panel">
-                    <img src="assets/imagenes/aboutGH.png" alt="">
+                    <img src={{proyecto.imagen}}>
                     <div class="cajaTexto">
-                        <h2>Tarjeta de Presentación</h2>
-                        <p>
-                            Esta es una tarjeta de presentación web que diseñé en un curso de Diseñador Web.
-                            El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
-                        </p>
-                        <h6>Año: 2021</h6>
+                        <h2>{{proyecto.titulo}}</h2>
+                        <p>{{proyecto.descripcion}}</p>
+                        <h6>{{proyecto.fecha_inicio | date:'yyyy'}} - {{proyecto.fecha_fin | date:'yyyy'}}</h6>
                     </div>
-                </div>
+                </div>    
             </li>
         </ul>
     </div>
