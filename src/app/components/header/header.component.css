@@ -71,6 +71,7 @@
     position: relative;
     transition: 0.4s;
 }
+
 /* MENU DESPLEGABLE */
 .menuDesplegable{
     display: none;
@@ -138,72 +139,6 @@
     transform: rotate(-90deg);
     transition: all 0.25s;
 }
-#contenidoMenu{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    visibility: hidden;
-    transition: all .4s linear .2s;
-    z-index: -1;
-}
-#contenidoMenu::after{
-    background-color: #1c1d25;
-    background: linear-gradient(270deg,#235aa6,#101b3b);
-    z-index: 25;
-}
-#contenidoMenu::after {
-    will-change: transform;
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transition: transform .45s cubic-bezier(.694,.048,.335,1),
-    -webkit-transform .45s cubic-bezier(.694,.048,.335,1);
-    z-index: 25;
-}
-.linksNav{
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 70%;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    z-index: 26;
-}
-.socialNavbar{
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 25px;
-    list-style: none;
-    z-index: 26;
-}
-.socialNavbar li{
-    display: inline-block;
-    margin-right: 5px;
-}
-.socialNavbar img{
-    width: 20px;
-    height: 20px;
-}
-#contenidoMenu ul a{
-    display: inline-block;
-    text-decoration: none;
-    color:white;
-    font-family: League Spartan, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 37px;
-    padding: 10px 15px;
-}
-/* FIN MENU DESPLEGABLE */
 
 @media only screen and (max-width: 1024px){
     .barraNavegacion a{

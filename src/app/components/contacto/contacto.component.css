@@ -40,8 +40,28 @@
 .error{
     color: red;
 }
+@media only screen and (max-width: 900px){
+    .modalCaja {
+        padding: 12% 5% 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .modalCaja {
+        padding: 15% 5% 0;
+    }
+}
 @media only screen and (max-width: 576px){
+    .modalCaja {
+        padding: 20% 5% 0; 
+    }
     .modal-caja{
         display: block;
+    }
+    .modal-contacto {
+        padding: 0;
+    }
+    .listaSkills-modal li img{
+        width: 25px;
+        height: 25px;
     }
 }

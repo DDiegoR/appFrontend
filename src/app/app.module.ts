@@ -16,6 +16,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { EdicionComponent } from './components/edicion/edicion.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EdicionComponent } from './components/edicion/edicion.component';
     RedesComponent,
     ContactoComponent,
     EdicionComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

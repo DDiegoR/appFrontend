@@ -34,3 +34,53 @@ h2 {
     align-items: center;
     margin-top: 50px;
 }
+.formulario {
+    width: 66%;
+}
+
+@media only screen and (max-width: 1024px) { 
+    .modalCaja {
+        padding: 13% 15% 0 25%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px) { 
+    .footer button {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .modalCaja {
+        padding: 20% 10% 0 20%;
+    }
+    .formulario {
+        width: 80%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 576px) { 
+    .modalCaja {
+        padding: 30% 5% 0 10%;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .modalCaja {
+        padding: 40% 0 0 5%;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}

@@ -23,7 +23,7 @@
     font-size: 25px;
 }
 
-.numeracion {
+.items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,4 +49,32 @@
 }
 ul.lista-tecnologias img {
     width: 100%;
+}
+
+@media only screen and (max-width: 900px) { 
+    .porcentaje {
+        font-size: 16px;
+    }
+    .nombre {
+        font-size: 13px;
+    }
+    .skills ul {
+        padding: 0;
+    }
+    .numeracion { 
+        font-size: 22px;
+        padding-bottom: 3px;
+    }
+    .lista-tecnologias {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .lista-tecnologias {
+        flex-direction: column;
+        width: 50%;
+        align-items: inherit;
+        margin-left: 25%;
+    }
 }

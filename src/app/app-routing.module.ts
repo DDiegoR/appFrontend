@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactoComponent} from './components/contacto/contacto.component';
-import { EdicionComponent } from './components/edicion/edicion.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 // Defino las rutas
 const routes: Routes = [
@@ -16,6 +16,7 @@ const routes: Routes = [
     ]},
   {path: 'about-me', component: AboutMeComponent},
   {path: 'contacto', component: ContactoComponent},
+  {path: 'menu', component: MenuComponent},
 ];
 
 

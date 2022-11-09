@@ -83,4 +83,22 @@ a:hover{
     .cajaTexto h6{
         font-size: 12px;
     }
+    .seccion-proyectos{
+        padding: 100px 5% 50px 5%;
+    }   
+    .panel {
+        width: 100%;
+        margin: 0;
+    }  
+}
+@media only screen and (max-width: 576px){ 
+    .cajaTexto p {
+        padding: 0;
+    }
+    .cajaTexto h2 {
+        padding-left: 0;
+    }
+    .cajaTexto h6 {
+        padding-left: 0;
+    }
 }

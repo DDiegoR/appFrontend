@@ -17,3 +17,9 @@
     top: 5%;
     right: 4%;
 }
+
+@media only screen and (max-width: 576px) {
+    .modalb img {
+        width: 100%;
+    }
+}

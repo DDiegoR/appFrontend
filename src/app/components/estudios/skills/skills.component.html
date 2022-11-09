@@ -3,8 +3,8 @@
     <h1 class="titulo">Mis Skills</h1>
     <div class="skills">
         <ul>
-            <li *ngFor = "let habilidad of habilidades" class="numeracion">
-                <div>{{habilidad.idHabilidad}}</div>
+            <li *ngFor = "let habilidad of habilidades" class="items">
+                <div class="numeracion">{{habilidad.idHabilidad}}</div>
                 <svg class="caja">
                     <rect x="0" y="0" attr.width="{{habilidad.porcentaje}}%" height="25" />
                     <text x="3" y="20" class="nombre">{{habilidad.titulo}}</text>
@@ -20,7 +20,7 @@
         <ul class="lista-tecnologias">
             <li *ngFor = "let tecnologia of tecnologias">
                 <h5>{{tecnologia.titulo}}</h5>
-                <img src="{{tecnologia.imagen}}" alt="">
+                <img src="{{tecnologia.imagen}}">
             </li>
         </ul>
     </div>
