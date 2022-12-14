@@ -10,17 +10,6 @@
             </button>
         </div>
         <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="col">
-            <!-- Nombre y apellido -->
-            <div class="campos">
-                <label for="name" class="col-form-label">Nombre y Apellido</label>
-                <input type="text" formControlName="name" class="form-control">
-            </div>
-            <!-- Validación nombre y apellido -->
-            <div *ngIf="Name?.errors && Name?.touched">
-                <p *ngIf="Name?.hasError('required')" class="error">
-                    El nombre y apellido es requerido.
-                </p>
-            </div>
             <!-- Email -->
             <div class="campos"> 
                 <label for="email" class="col-form-label">Correo Electrónico</label>

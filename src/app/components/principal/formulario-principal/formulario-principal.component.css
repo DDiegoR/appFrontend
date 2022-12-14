@@ -1,5 +1,10 @@
+.formulario {
+    width: 100%;
+}
 .modalCaja{
-    padding: 13% 25% 0 35%;
+    width: 20%;
+    padding-top: 13%;
+    margin: auto;
 }
 h2 {
     margin: 0 0 20px;
@@ -16,26 +21,8 @@ h2 {
 .campos{
     margin-bottom: 15px;
 }
-.header .btn{
-    background-color: transparent;
-    border: 0;
-    margin-bottom: 15px;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
-}
-.formulario {
-    width: 66%;
 }
 
 @media only screen and (max-width: 1024px) { 

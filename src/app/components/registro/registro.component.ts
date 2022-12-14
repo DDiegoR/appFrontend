@@ -11,7 +11,6 @@ export class RegistroComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
-      name: ['', [Validators.required]],
       email: ['',[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
     })
@@ -20,9 +19,6 @@ export class RegistroComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get Name() {
-    return this.form.get("name");
-  }
   get Mail() {
     return this.form.get("email");
   }
@@ -30,9 +26,6 @@ export class RegistroComponent implements OnInit {
     return this.form.get("password");
   }
 
-  get NameValid() {
-    return this.Name?.valid;
-  }
   get EmailValid() { 
     return false;
   }

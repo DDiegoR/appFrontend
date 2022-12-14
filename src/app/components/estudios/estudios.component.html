@@ -7,16 +7,50 @@
             </button>
         </div>
     </div>
-    <div class="caja-estudios">
-        <!-- Listado -->
+    <!-- <div class="caja-estudios">
+        
         <ul class="listado-estudios">
             <li *ngFor = "let estudio of estudios">
                 <a class="botonEstudio activeBoton" routerLink="{{estudio.path}}" [routerLinkActive]="'active'">{{estudio.nombre}}</a>
             </li>
         </ul>
-        <!-- Contenido -->
+        
         <div class="contenido-secciones">
             <router-outlet></router-outlet>
+        </div>
+    </div> -->
+
+
+    <div class="caja-estudios">
+        <!-- Listado -->
+        <ul class="listado-estudios">
+            <li *ngFor = "let estudio of estudios">
+                <a class="botonEstudio activeBoton">{{estudio.nombre}}</a>
+            </li>
+        </ul>
+        <!-- Contenido -->
+        <div class="contenido-secciones">
+            <div id="argentinaPrograma" role="tabpanel">
+                <h3 class="tituloEstudio">{{titulo1}}<a href={{link1}} target="_blank">{{nombreLink1}}</a></h3>
+                <h5 class="subtituloEstudio">{{fecha_inicio1 | date: 'MMMM d, y'}} - {{fecha_fin1 | date: 'MMMM d, y'}}</h5>
+                <p class="descripcionEstudio">{{descripcion1}}</p>
+                <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
+                <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
+            </div>
+
+            <div id="cursoDW" role="tabpanel">
+                <h3 class="tituloEstudio">{{titulo2}}<a href={{link2}} target="_blank">{{nombreLink2}}</a></h3>
+                <h5 class="subtituloEstudio">{{fecha_inicio2 | date: 'MMMM d, y'}} - {{fecha_fin2 | date: 'MMMM d, y'}}</h5>
+                <p class="descripcionEstudio">{{descripcion2}}</p>
+                <a class="enlaces" (click)="modal.showModal()" (click)="cargarRuta()">Ver certificado</a>
+                <modal-certificados #modal [rutaImagen]="rutaImagen"></modal-certificados>
+            </div>
+
+            <div id="facultad" role="tabpanel">
+                <h3 class="tituloEstudio">{{titulo3}}<a href={{link3}} target="_blank">{{nombreLink3}}</a></h3>
+                <h5 class="subtituloEstudio">{{fecha_inicio3 | date:'MMMM d, y'}} - {{fecha_fin3}}</h5>
+                <p class="descripcionEstudio">{{descripcion3}}</p>
+            </div>
         </div>
     </div>
     <skills></skills>

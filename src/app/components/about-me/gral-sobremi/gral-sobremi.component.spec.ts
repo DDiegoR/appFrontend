@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrincipalLoginComponent } from './principal-login.component';
+import { GralSobremiComponent } from './gral-sobremi.component';
 
-describe('PrincipalLoginComponent', () => {
-  let component: PrincipalLoginComponent;
-  let fixture: ComponentFixture<PrincipalLoginComponent>;
+describe('GralSobremiComponent', () => {
+  let component: GralSobremiComponent;
+  let fixture: ComponentFixture<GralSobremiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PrincipalLoginComponent ]
+      declarations: [ GralSobremiComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PrincipalLoginComponent);
+    fixture = TestBed.createComponent(GralSobremiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

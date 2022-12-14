@@ -50,7 +50,7 @@
 }
 .cajaTexto h6 {
     font-size: 16px;
-    padding: 0 40px;
+    padding: 10px 40px;
     color: white;
 }
 a:hover{
@@ -71,6 +71,10 @@ a:hover{
 .botonEdit i {
     color: white;
     margin: 5px 3px;
+}
+.cajaTexto a {
+    color: wheat;
+    padding-left: 40px;
 }
 
 @media only screen and (max-width: 900px){

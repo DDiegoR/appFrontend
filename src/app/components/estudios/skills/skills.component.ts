@@ -14,6 +14,7 @@ let tecnologias = [
   {idTecnologia: 3, titulo: "JAVASCRIPT", imagen:"assets/iconos/javascript.png"},
   {idTecnologia: 4, titulo: "ANGULAR", imagen:"assets/iconos/angular.png"},
   {idTecnologia: 5, titulo: "MySQL", imagen:"assets/iconos/mysql.png"},
+  {idTecnologia: 6, titulo: "JAVA", imagen:"assets/iconos/java.png"},
 ];
 
 @Component({

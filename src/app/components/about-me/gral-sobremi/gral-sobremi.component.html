@@ -1,0 +1,47 @@
+<div id="sobreMi" class="seccion-sobreMi">
+    <div class="barra">
+        <h2 class="titulos-secciones">Sobre Mí</h2>
+        <div>
+            <button type="button" class="botonEdit">
+                <i class="fas fa-pen"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contenedor-sobreMi">
+        <div class="parrafoAbout">
+            <p>
+                {{sobreMi}}
+            </p>
+            <p>
+                Te mando un saludo y gracias por pasarte por mi Portfolio Web!
+            </p>
+        </div>
+        <div class="perfil">
+            <img id="img-perfil" src="{{imagenPerfil}}">
+        </div>
+    </div>
+    <div class="barra">
+        <h2 class="titulos-secciones">Experiencia</h2>
+        <div>
+            <button type="button" class="botonEdit">
+                <i class="fas fa-pen"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contenedor-experiencia">
+        <ul>
+            <li *ngFor = "let exp of experiencias">
+                <div class="barraExp">
+                    <img class="logo" src="{{exp.logo}}">
+                    <h2>{{exp.empresa}}</h2>
+                </div>
+                <h6><i style="color: #2ECC71 ">Rol-Actividad:  </i> {{exp.rol}}</h6>
+                <br>
+                <p class="parrafoExp">{{exp.descripcion}}</p>
+                <h6>{{exp.fechaInicio | date: "MMMM d, y"}} - {{exp.fechaFin | date: "MMMM d, y"}}</h6>
+                <hr>
+                <br>
+            </li>
+        </ul>
+    </div>
+</div>

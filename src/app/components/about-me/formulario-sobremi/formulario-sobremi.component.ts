@@ -3,36 +3,22 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
-  selector: 'principal-login',
-  templateUrl: './principal-login.component.html',
-  styleUrls: ['./principal-login.component.css']
+  selector: 'formulario-sobremi',
+  templateUrl: './formulario-sobremi.component.html',
+  styleUrls: ['./formulario-sobremi.component.css']
 })
+export class FormularioSobremiComponent implements OnInit {
 
-export class PrincipalLoginComponent implements OnInit {
   form: FormGroup;
     
   constructor(private formBuilder: FormBuilder) {
   this.form = this.formBuilder.group({
-    email: ['',[Validators.required, Validators.email]],
-    password: ['', [Validators.required]],
+    name: ['',[]],
+    rol: ['', []],
     })
   }
 
   ngOnInit(): void {
-  }
-
-  get Mail() {
-    return this.form.get("email");
-  }
-  get Password() {
-    return this.form.get("password");
-  }
-
-  get EmailValid() { 
-    return false;
-  }
-  get PasswordValid() {
-    return this.Password?.touched && !this.Password?.valid;
   }
 
   onEnviar(event: Event) {

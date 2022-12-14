@@ -1,0 +1,30 @@
+<div class="formulario">
+    <form>
+        <div class="modalCaja">
+            <div class="login formulario">
+                <div class="header">
+                    <h2>Editar Seccion</h2>
+                </div>
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="col">
+                    <!-- Nombre y Apellido -->
+                    <div class="campos"> 
+                        <label for="name" class="col-form-label">Nombre y Apellido</label>
+                        <input type="text" formControlName="name" class="form-control"> 
+                    </div>
+                    <!-- Validación Nombre y Apellido -->
+
+                    <!-- Contraseña -->
+                    <div class="campos">
+                        <label for="rol" class="col-form-label">Rol</label>
+                        <input type="text" formControlName="rol" class="form-control">
+                    </div>
+                    <!-- Validación rol -->
+        
+                    <div class="footer">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+</div>

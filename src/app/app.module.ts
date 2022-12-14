@@ -7,27 +7,26 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AppRoutingModule } from './app-routing.module';
 import { EstudiosModule } from './components/estudios/estudios.module';
 import { ProyectosModule } from './components/proyectos/proyectos.module';
-import { LoginModule } from './components/login/login.module';
+import { PrincipalModule } from './components/principal/principal.module';
+import { SobremiModule } from './components/about-me/sobremi.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { PrincipalComponent } from './components/principal/principal.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { EdicionComponent } from './components/edicion/edicion.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AboutMeComponent,
-    PrincipalComponent,
     RedesComponent,
     ContactoComponent,
     EdicionComponent,
     MenuComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,8 @@ import { MenuComponent } from './components/menu/menu.component';
     AppRoutingModule,
     EstudiosModule,
     ProyectosModule,
-    LoginModule,
+    PrincipalModule,
+    SobremiModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

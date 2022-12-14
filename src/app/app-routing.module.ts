@@ -2,26 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PrincipalComponent } from './components/principal/principal.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ContactoComponent} from './components/contacto/contacto.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { LoginComponent } from './components/login/login.component';
 
 // Defino las rutas
 const routes: Routes = [
-  {path: '', redirectTo: '/principal', pathMatch:'full'},
-  {path: 'principal', component: PrincipalComponent,
-    children: [
-      {path: 'contacto', component: ContactoComponent},
-    ]},
-  {path: 'about-me', component: AboutMeComponent},
-  {path: 'contacto', component: ContactoComponent},
+  {path: '', redirectTo: 'principal', pathMatch: 'full'},
   {path: 'menu', component: MenuComponent},
+  {path: 'login',component: LoginComponent},
 ];
 
 
 @NgModule({
-  declarations: [],
   imports: [
     RouterModule.forRoot(routes),
     CommonModule
